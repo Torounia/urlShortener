@@ -49,7 +49,7 @@ router.post('/shorten', async (req, res) => {
                     date: new Date()
                 })
                 await url.save()
-                res.json(url)
+                res.json(url.shortUrl)
             }
         }
         // exception handler
